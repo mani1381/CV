@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Contact form
+        </title>
+        <link rel="stylesheet"  href="mystyle.css">
+        <script>
+            function Confirmation(){
+                        var x=confirm("Are you sure to send out your respond?");
+                         if (x== true){alert("Your respond was sent successfully");}
+            }
+            </script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="Firstpage.html">Personal Information</a>
+            <a href="Technical.html">Technical skills</a>
+            <a href="honors.html">Honors and Awards</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+
+        <h1 class="Introduction">
+            Contact Form
+        </h1>
+
+        <div class="containerr">
+            <form onSubmit="Confirmation()">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="First name?">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Last name?">
+              <label for="em">Email</label>
+              <input type="text" id="em" name="email" placeholder="Email?">
+          
+              <label for="subject">Subject</label>
+              <textarea  id="subject" name="subject" placeholder="Write your respond here" style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+        <footer class="bottom">
+            <a href="https://github.com/mani1381">github</a>
+            <a href="mailto:mani81t@gmail.com">mani81t@gmail.com</a>
+            <a href="https://stackoverflow.com/users/17462812/mani-tahami">StackOverflow</a>
+        </footer>
+
+    </body>
+</html>
